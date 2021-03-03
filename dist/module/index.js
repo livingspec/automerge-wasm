@@ -1,6 +1,11 @@
 // @ts-ignore
 import { setDefaultBackend } from "automerge";
-// @ts-ignore
-import * as wasmBackend from "automerge-backend-wasm";
-setDefaultBackend(wasmBackend);
+const inAWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (inAWorker) {
+    // TODO
+    // import("automerge-backend-wasm").then(setDefaultBackend);
+}
+else {
+    import("automerge-backend-wasm").then(setDefaultBackend);
+}
 export * from "automerge";

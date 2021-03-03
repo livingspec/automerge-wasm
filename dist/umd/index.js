@@ -14,15 +14,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "automerge", "automerge-backend-wasm", "automerge"], factory);
+        define(["require", "exports", "automerge", "automerge"], factory);
     }
 })(function (require, exports) {
     "use strict";
+    var __syncRequire = typeof module === "object" && typeof module.exports === "object";
     Object.defineProperty(exports, "__esModule", { value: true });
     // @ts-ignore
     const automerge_1 = require("automerge");
-    // @ts-ignore
-    const wasmBackend = require("automerge-backend-wasm");
-    automerge_1.setDefaultBackend(wasmBackend);
+    const inAWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+    if (inAWorker) {
+        // TODO
+        // import("automerge-backend-wasm").then(setDefaultBackend);
+    }
+    else {
+        (__syncRequire ? Promise.resolve().then(() => require("automerge-backend-wasm")) : new Promise((resolve_1, reject_1) => { require(["automerge-backend-wasm"], resolve_1, reject_1); })).then(automerge_1.setDefaultBackend);
+    }
     __exportStar(require("automerge"), exports);
 });
