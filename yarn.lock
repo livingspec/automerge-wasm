@@ -5,10 +5,10 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"automerge-backend-wasm@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "automerge-backend-wasm@npm:0.1.4"
-  checksum: db898e0c58b0e2e282bd1d753469e7ae8b098dabd0ae073d9e9e28d965471e7470619bba66b047502a84b81a2043186570c71c10115be5cba44a9b3a91b978c1
+"@livingspec/automerge-backend-wasm@npm:0.1.7":
+  version: 0.1.7
+  resolution: "@livingspec/automerge-backend-wasm@npm:0.1.7"
+  checksum: b8f761a55b40ab935ca71be1e1562e7ba035fadeb71807be44cbae49a5b336d02171a4c35536e5c202a7c7f8670de78a47b7b727bc64668f1d76656b6bca15c1
   languageName: node
   linkType: hard
 
@@ -16,8 +16,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "automerge-wasm@workspace:."
   dependencies:
+    "@livingspec/automerge-backend-wasm": 0.1.7
     automerge: "livingspec/automerge.git#4c3320ae275e8486d68df5c9d63f417ec7038733"
-    automerge-backend-wasm: ^0.1.4
     typescript: ^4.2.2
   languageName: unknown
   linkType: soft
@@ -48,22 +48,22 @@ __metadata:
   linkType: hard
 
 typescript@^4.2.2:
-  version: 4.2.2
-  resolution: "typescript@npm:4.2.2"
+  version: 4.2.3
+  resolution: "typescript@npm:4.2.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b2e3d5551a12c51b6b7a14f0e78d2664c136fab4dfb3eecaaf7a6e8e7e608f2cf43c6ebe81387d194db2588793b769720d2df523d445a1664b7585c5b9a85984
+  checksum: 06e8470f317db6f5e2fce809b20eb84a67a7d8179057abff36e5427bd1b891bd08e54581ff81f0fa36aef9b6d1eb0f54eaf6e2643c6dbd4e37a0adcc41eed256
   languageName: node
   linkType: hard
 
 "typescript@patch:typescript@^4.2.2#builtin<compat/typescript>":
-  version: 4.2.2
-  resolution: "typescript@patch:typescript@npm%3A4.2.2#builtin<compat/typescript>::version=4.2.2&hash=a45b0e"
+  version: 4.2.3
+  resolution: "typescript@patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ea1f1b6be22c9e3348f61692719d3169dd4abaad34b2132edff44a8d5a748bde8f3116fa2fae41d61c92b3a7cf1c35d0c7276058b2f35196ff3cde3b7d57c84b
+  checksum: a8956044aabf730699bcc3c2475efdd3f35e509329325cf60b4989761d4c2188e2c474183e2cf92b8c201fcf976814a5a16f144508b2a832643c4f972d0ab803
   languageName: node
   linkType: hard
 

@@ -6,13 +6,17 @@
   "author": "Nemanja Tosic <nemanja@livingspec.com>",
   "license": "MIT",
   "scripts": {
+    "prepack": "yarn build",
     "build": "tsc --build src/tsconfig.umd.json && tsc --build src/tsconfig.es6.json"
+  },
+  "dependencies": {
+    "@livingspec/automerge-backend-wasm": "0.1.7",
+    "automerge": "livingspec/automerge.git#4c3320ae275e8486d68df5c9d63f417ec7038733"
   },
   "devDependencies": {
     "typescript": "^4.2.2"
   },
-  "dependencies": {
-    "automerge": "livingspec/automerge.git#4c3320ae275e8486d68df5c9d63f417ec7038733",
-    "automerge-backend-wasm": "^0.1.4"
-  }
+  "files": [
+    "dist"
+  ]
 }
