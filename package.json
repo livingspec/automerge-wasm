@@ -1,5 +1,5 @@
 {
-  "name": "automerge-wasm",
+  "name": "@livingspec/automerge-wasm",
   "version": "1.0.0",
   "author": "Nemanja Tosic <nemanja@livingspec.com>",
   "license": "MIT",
