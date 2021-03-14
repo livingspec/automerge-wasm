@@ -12,7 +12,7 @@
     "build": "tsc --build src/tsconfig.node.json && tsc --build src/tsconfig.webpack.json"
   },
   "dependencies": {
-    "@livingspec/automerge-backend-wasm": "livingspec/automerge-backend-wasm.git#main",
+    "@livingspec/automerge-backend-wasm": "0.1.8",
     "automerge": "livingspec/automerge.git#4c3320ae275e8486d68df5c9d63f417ec7038733"
   },
   "devDependencies": {
