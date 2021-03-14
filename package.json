@@ -1,8 +1,9 @@
 {
   "name": "@livingspec/automerge-wasm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Nemanja Tosic <nemanja@livingspec.com>",
   "license": "MIT",
+  "main": "./dist/webpack/index.js",
   "exports": {
     "webpack": "./dist/webpack/index.js",
     "node": "./dist/node/index.js"
@@ -12,7 +13,7 @@
     "build": "tsc --build src/tsconfig.node.json && tsc --build src/tsconfig.webpack.json"
   },
   "dependencies": {
-    "@livingspec/automerge-backend-wasm": "0.1.8",
+    "@livingspec/automerge-backend-wasm": "^0.1.9",
     "automerge": "livingspec/automerge.git#4c3320ae275e8486d68df5c9d63f417ec7038733"
   },
   "devDependencies": {
