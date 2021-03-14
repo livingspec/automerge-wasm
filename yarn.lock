@@ -5,10 +5,19 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@livingspec/automerge-backend-wasm@npm:0.1.7":
-  version: 0.1.7
-  resolution: "@livingspec/automerge-backend-wasm@npm:0.1.7"
-  checksum: b8f761a55b40ab935ca71be1e1562e7ba035fadeb71807be44cbae49a5b336d02171a4c35536e5c202a7c7f8670de78a47b7b727bc64668f1d76656b6bca15c1
+"@livingspec/automerge-backend-wasm@livingspec/automerge-backend-wasm.git#main":
+  version: 1.0.0
+  resolution: "@livingspec/automerge-backend-wasm@https://github.com/livingspec/automerge-backend-wasm.git#commit=bf5158da3824f9d2795241d2806b6c7f85d5377f"
+  dependencies:
+    automerge-backend-wasm: ^0.1.4
+  checksum: 16475e545f28e54a7cdd86100d6eeb1e614c9fcfb3a626a5d5ace9b4611f5f368d7e54eabf5a1ac9a5567844b68c6a5ea7dc5e020dc17f7da9cabca3485a4dd0
+  languageName: node
+  linkType: hard
+
+"automerge-backend-wasm@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "automerge-backend-wasm@npm:0.1.4"
+  checksum: db898e0c58b0e2e282bd1d753469e7ae8b098dabd0ae073d9e9e28d965471e7470619bba66b047502a84b81a2043186570c71c10115be5cba44a9b3a91b978c1
   languageName: node
   linkType: hard
 
@@ -16,7 +25,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "automerge-wasm@workspace:."
   dependencies:
-    "@livingspec/automerge-backend-wasm": 0.1.7
+    "@livingspec/automerge-backend-wasm": "livingspec/automerge-backend-wasm.git#main"
     automerge: "livingspec/automerge.git#4c3320ae275e8486d68df5c9d63f417ec7038733"
     typescript: ^4.2.2
   languageName: unknown
