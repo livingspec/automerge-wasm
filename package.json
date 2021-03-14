@@ -1,13 +1,15 @@
 {
   "name": "automerge-wasm",
   "version": "1.0.0",
-  "main": "dist/umd/index.js",
-  "module": "dist/module/index.js",
   "author": "Nemanja Tosic <nemanja@livingspec.com>",
   "license": "MIT",
+  "exports": {
+    "webpack": "./dist/webpack/index.js",
+    "node": "./dist/node/index.js"
+  },
   "scripts": {
     "prepack": "yarn build",
-    "build": "tsc --build src/tsconfig.umd.json && tsc --build src/tsconfig.es6.json"
+    "build": "tsc --build src/tsconfig.node.json && tsc --build src/tsconfig.webpack.json"
   },
   "dependencies": {
     "@livingspec/automerge-backend-wasm": "livingspec/automerge-backend-wasm.git#main",

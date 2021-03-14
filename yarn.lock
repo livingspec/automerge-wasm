@@ -5,15 +5,6 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@livingspec/automerge-backend-wasm@livingspec/automerge-backend-wasm.git#main":
-  version: 1.0.0
-  resolution: "@livingspec/automerge-backend-wasm@https://github.com/livingspec/automerge-backend-wasm.git#commit=bf5158da3824f9d2795241d2806b6c7f85d5377f"
-  dependencies:
-    automerge-backend-wasm: ^0.1.4
-  checksum: 16475e545f28e54a7cdd86100d6eeb1e614c9fcfb3a626a5d5ace9b4611f5f368d7e54eabf5a1ac9a5567844b68c6a5ea7dc5e020dc17f7da9cabca3485a4dd0
-  languageName: node
-  linkType: hard
-
 "automerge-backend-wasm@npm:^0.1.4":
   version: 0.1.4
   resolution: "automerge-backend-wasm@npm:0.1.4"
